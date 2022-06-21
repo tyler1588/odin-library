@@ -1,23 +1,32 @@
+:root {
+    --dark: #06283D;
+    --blue: #1363DF;
+    --lightblue: #47B5FF;
+    --light: #DFF6FF;
+}
+
 body {
     margin: 0;
     padding: 0;
     height: 100vh;
     width: 100vw;
-    background-color: lightgrey;
+    background-color: var(--dark);
     font-family: 'Roboto', sans-serif;
+    color: var(--light);
 }
 
 .navbar {
-    height: 100px;
-    background-color: white;
+    background-color: var(--blue);
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 2rem;
+    text-align: center;
 }
 
 .navbar > h1 {
+    font-size: 3rem;
     margin: 0;
-    text-align: center;
-    padding-top: 1rem;
 }
+
 
 .library {
     padding: 2rem;
@@ -28,8 +37,8 @@ body {
 
 div[class^="book-"] {
     padding: 25px;
-    border-radius: 10px;
+    border-radius: 1rem;
     text-align: center;
-    background-color: white;
+    background-color: var(--blue);
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
