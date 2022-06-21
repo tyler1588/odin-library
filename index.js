@@ -39,7 +39,7 @@ for (let i = 0; i < myLibrary.length; i++){
     bookNumPages.appendChild(bookNumPagesNode);
 
     //Append read_status to book div
-    const bookReadStatus = document.createElement("h3");
+    const bookReadStatus = document.createElement("button");
     bookReadStatus.classList.add("bookReadStatus");
     const bookReadStatusNode = document.createTextNode(myLibrary[i].read_status);
     bookReadStatus.appendChild(bookReadStatusNode);
